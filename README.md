@@ -1,33 +1,25 @@
-# ⚡ Advanced CyberSecurity Tools v1.0
+# ⚡ ULTIMATE LEVEL: MULTI-THREADED OSINT & BANNER SCANNER v5.1 PRO ⚡
 
-Welcome to the **CyberSecurity Tools** repository. This project features high-performance Python scripts engineered for penetration testing, vulnerability assessment, and advanced network diagnostics.
-
----
-
-## 🛠️ Included Tools
-
-| File Name | Tool Type | Description | Language |
-| :--- | :--- | :--- | :--- |
-| `master_scan.py` | Network Scanner | Multi-threaded IP & Port vulnerability scanner. | Python 3 |
-| `web_master.py` | Web Directory Auditor | Scans target servers for hidden files & secure endpoints. | Python 3 |
-| `words.txt` | Cyber Security Wordlist | Specialized wordlist tailored for security auditing and directory discovery. | Plain Text |
+An advanced, high-speed network reconnaissance and intelligence gathering tool built in Python. This tool combines **Multi-Threaded Port Scanning**, **Banner Grabbing (Service Info Detection)**, and **OSINT (Geo-IP & ASN Lookup)** into a single, cohesive cybersecurity suite.
 
 ---
 
-## 🚀 Key Features
+## 🔥 Key Features
 
-* **Advanced Network Intelligence:** `master_scan.py` utilizes modern socket programming to evaluate network nodes and identify open vectors.
-* **Automated Target Discovery:** `web_master.py` implements custom HTTP request handling to quickly locate hidden administrative pathwaves.
-* **Optimized and Lightweight:** Designed specifically to run seamlessly in minimal environments such as **Linux/Termux** on mobile systems.
-* **Pure Python Architecture:** Built using zero heavy dependencies, maximizing execution speed and system performance.
+* 🚀 **Ultra-Fast Performance:** Utilizing Python's `ThreadPoolExecutor` with up to 100 concurrent threads.
+* 🛡️ **OSINT Intelligence:** Real-time Geo-IP lookup providing Country, Region, City, ISP, and ASN tracking via `ip-api.com`.
+* 📡 **Banner Grabbing:** Extracts service headers and application version info directly from open ports.
+* 🧠 **Intelligent Service Detection:** Built-in dictionary to guess probable services even when banners are suppressed.
+* 🔒 **Race Condition Prevention:** Implements `threading.Lock()` to ensure clean, uncorrupted terminal outputs.
+* 📊 **Structured Reports:** Option to automatically export clean, human-readable scan reports in `.json` format.
+* 🎨 **Beautiful UI:** Fully color-coded terminal interface using `Colorama` for a professional CLI experience.
 
 ---
 
-## 💻 Installation & Usage
+## 🛠️ Installation & Dependencies
 
-To setup and deploy these tools locally in your Termux or Linux terminal, follow these steps:
+To run this tool in Termux or any Linux environment, you need to install the required Python libraries first:
 
-### 1. Clone the Repository
 ```bash
-git clone [https://github.com/mallesharepally4-debug/CyberSecurity_Tools.git](https://github.com/mallesharepally4-debug/CyberSecurity_Tools.git)
-cd CyberSecurity_Tools
+pip install colorama requests
+
